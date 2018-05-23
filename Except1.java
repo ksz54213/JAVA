@@ -1,31 +1,31 @@
 import java.util.*;
 import java.lang.*;
-class test{
+class Except1{
 	public static void main(String[] args) {
 		int end=0,t=0;
 		int [] x= new int[]{2,2,0,2};
 		int [] y = new int[]{5,0,0,-5};
 	//	Scanner scanner =new scanner(System.in);
 		while(t<4){
-			x=scanner.nextInt(); y=scanner.nextInt();
+	//		x=scanner.nextInt(); y=scanner.nextInt();
 			try{	
 				
 				if(x[t]==0&&y[t]==0)
-					throw new CmyException("0ªº0¦¸¤èµL©w¸q,¦^¶Ç­È±N¿ù»~");
+					throw new CmyException("0çš„0æ¬¡æ–¹ç„¡å®šç¾©,å›žå‚³å€¼å°‡éŒ¯èª¤");
 				else if(y[t]<0)
-					throw new CmyException2("¦¸¤è¬°­t­È,µ²ªG¤£¬°¾ã¼Æ,¦^¶Ç­È±N¿ù»~");
+					throw new CmyException2("æ¬¡æ–¹ç‚ºè² å€¼,çµæžœä¸ç‚ºæ•´æ•¸,å›žå‚³å€¼å°‡éŒ¯èª¤");
 				end=powerXY(x[t],y[t]);
 			}
 			catch(CmyException e){
-				//System.out.println("0ªº 0¦¸¤è=-1");
+				//System.out.println("0çš„ 0æ¬¡æ–¹=-1");
 				end=-1;
 			}
 			catch(CmyException2 e){
-				//System.out.println(x+" ªº " +y+" ¦¸¤è=-1");	
+				//System.out.println(x+" çš„ " +y+" æ¬¡æ–¹=-1");	
 				end=-1;
 			}
 			finally{
-				System.out.println(x[t]+" ªº " +y[t]+" ¦¸¤è= "+end+" ");
+				System.out.println(x[t]+" çš„ " +y[t]+" æ¬¡æ–¹= "+end+" ");
 			}	
 			t++;
 		}
